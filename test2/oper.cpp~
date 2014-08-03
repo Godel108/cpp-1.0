@@ -1,0 +1,51 @@
+#include <iostream>
+
+int digit_1, digit_2, operand;
+bool IsEqual(int, int);
+
+
+int ReadNumber()
+{
+   using namespace std;
+   cout << "Enter two digits \n" << "Digit 1: \n";
+   cin >> digit_1;
+   cout << "Digit 2: \n";
+   cin >> digit_2;
+   cout << "Enter an operator (Choose from +,-,*, or /: \n";
+   cin >> operand;
+ }
+
+int ChooseOper()
+{
+   using namespace std;
+   int finnum;
+   int w = +;
+   int x = -;
+   int y = *;
+   int z = /;
+   if (bValue(w, operand))
+    finnum = digit_1 + digit_2;
+    cout << "The sum of " << digit_1 << " and " << digit_2 << " is " << finnum << ".\n";
+    return (0);
+    if (IsEqual(x, operand))
+    finnum = digit_1 - digit_2;
+    cout << "The division of " << digit_1 << " and " << digit_2 << " is " << finnum << ".\n";
+    return (0);
+    if (IsEqual(y,operand))
+    finnum = digit_1 * digit_2;
+    cout << "The product of " << digit_1 << " and " << digit_2 << " is " << finnum << ".\n";	
+    return (0);
+    if (IsEqual(z, operand))
+    finnum = digit_1 / digit_2;
+    cout << "The quotient of " << digit_1 << " and " << digit_2 << " is " << finnum << ".\n";
+    return (0);
+      }
+
+
+int main()
+{
+  ReadNumber();
+  ChooseOper();
+  return (0);
+}
+  
